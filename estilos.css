@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fce4ec;
+    color: #222;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 24px;
+}
+
+.panel,
+.resultado {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 25px;
+    color: #c2185b;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 7px;
+    color: #ad1457;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    border: 1px solid #e8a8c1;
+    border-radius: 8px;
+    background: #fff8fa;
+}
+
+button {
+    margin-top: 18px;
+    padding: 12px 25px;
+    border: 0;
+    border-radius: 8px;
+    background: #e91e63;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c2185b;
+}
+
+.error {
+    margin-top: 15px;
+    color: #b00020;
+    font-weight: bold;
+}
+
+.resultado {
+    display: none;
+}
+
+.procedimiento {
+    background: #fff8fa;
+    border: 1px solid #f3bfd2;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.procedimiento h2 {
+    color: #c2185b;
+    margin-top: 0;
+}
+
+.paso {
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 3px 0;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 650px) {
+
+    .inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor {
+        padding: 12px;
+        margin: 10px auto;
+    }
+
+}

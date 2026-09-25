@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método por triangulación</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="panel">
+
+            <h1>Método por triangulación</h1>
+
+            <div class="inputs">
+
+                <div>
+                    <label for="a">a</label>
+                    <input type="number" id="a" step="any" min="0">
+                </div>
+
+                <div>
+                    <label for="b">b</label>
+                    <input type="number" id="b" step="any" min="0">
+                </div>
+
+                <div>
+                    <label for="c">c</label>
+                    <input type="number" id="c" step="any" min="0">
+                </div>
+
+            </div>
+
+            <button onclick="calcular()">
+                Calcular
+            </button>
+
+            <div id="error" class="error"></div>
+
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
